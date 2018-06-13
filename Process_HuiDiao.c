@@ -8,9 +8,11 @@ VOID ProcessPre (
 {
 	UNREFERENCED_PARAMETER(ParentId);
 	UNREFERENCED_PARAMETER(ProcessId);
-	if (Create == TRUE)  //创建进程
+	if (Create == TRUE)  //Create Process 
 	{
-		KdPrint(("create process\n"));
+		KdPrint(("Create process\n"));
+	}else{
+		KdPrint(("Delete process\n"));
 	}
 }
 VOID Unload(IN PDRIVER_OBJECT pDriverObject)
